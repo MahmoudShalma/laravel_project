@@ -11,26 +11,12 @@
 
 <body>
 
-
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li> {{ $error }} </li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
-
-
-
     <div class="container">
-        <h2>Vertical (basic) form</h2>
+        <h2> form</h2>
         <form action="{{ url('store') }}" method="post" enctype="multipart/form-data">
 
             @csrf
 
-            {{-- <input type="hidden" name="_token"  value="{{csrf_token()}}" > --}}
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Name</label>
