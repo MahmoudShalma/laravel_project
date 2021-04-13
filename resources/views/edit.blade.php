@@ -30,25 +30,25 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Name</label>
-                <input type="text" name="name" value="{{ old('name') }}" class="form-control" id="exampleInputName"
+                <input type="text" name="name" value="{{ $data->name }}" class="form-control" id="exampleInputName"
                     aria-describedby="" placeholder="Enter Name">
             </div>
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Age</label>
-                <input type="number" name="age" value="{{ old('age') }}" class="form-control" id="exampleInputEmail1"
+                <input type="number" name="age" value="{{ $data->age }}" class="form-control" id="exampleInputEmail1"
                     aria-describedby="" placeholder="Enter Age">
             </div>
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Phone</label>
-                <input type="number" name="phone" value="{{ old('phone') }}" class="form-control"
+                <input type="number" name="phone" value="{{ $data->phone }}" class="form-control"
                     id="exampleInputEmail1" aria-describedby="" placeholder="Enter Phone">
             </div>
 
             <div class="form-group">
                 <label for="exampleInputEmail1">National Id</label>
-                <input type="number" name="id" value="{{ old('id') }}" class="form-control" id="exampleInputEmail1"
+                <input type="number" name="id" value="{{ $data->national_id }}" class="form-control" id="exampleInputEmail1"
                     aria-describedby="" placeholder="Enter National Id">
             </div>
 
@@ -60,7 +60,7 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="text" name="address" value="{{ old('address') }}" class="form-control"
+                <input type="text" name="address" value="{{ $data->address }}" class="form-control"
                     id="exampleInputEmail1" aria-describedby="" placeholder="Enter Address">
             </div>
 

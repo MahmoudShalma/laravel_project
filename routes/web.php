@@ -22,4 +22,8 @@ Route::get('create', function () {
 });
 
 
-Route::post('store','App\Http\Controllers\FormController@store');
+Route::post('store','App\Http\Controllers\testController@store');
+Route::get('display','App\Http\Controllers\testController@index');
+Route::get('delete/{id}','App\Http\Controllers\testController@destroy');
+Route::get('edit/{id}','App\Http\Controllers\testController@edit');
+
