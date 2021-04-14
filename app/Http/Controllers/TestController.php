@@ -100,7 +100,7 @@ class TestController extends Controller
         $this->validate(request(), [
 
             'name'     => 'required|min:5|max:20',
-            // 'password' => 'required|min:6',
+             'password' => 'required|min:6',
             'age' => 'required|min:1|max:2',
             'phone' => 'required|size:11',
             'id' => 'required|size:14',
@@ -108,13 +108,15 @@ class TestController extends Controller
 
         ]);
 
-
-        $account                  = new test();
+        $account = test::find($test);
         $account->name     = $request->name;
         $account->age     = $request->age;
         $account->phone     = $request->phone;
         $account->national_id     = $request->id;
-        // $account->password     = encrypt($request->password);
+        // if (isset($request->password)) {
+        //  $account->password     = encrypt($request->password);
+
+        // }
         $account->address     = $request->address;
         $account->about     = $request->about;
         $account->save();

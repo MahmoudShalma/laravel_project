@@ -23,7 +23,7 @@
 
     <div class="container">
         <h2> form</h2>
-        <form action="{{ url('store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ url('update') }}" method="post" enctype="multipart/form-data">
 
             @csrf
 
